@@ -1,6 +1,6 @@
 # Benchmarking Grok-4 on Terminal-Bench
 
-This repository captures a 48-hour sprint to analyse Grok-4 on Terminal-Bench, introduce diagnostic metrics, and ship a revised task that stresses long-context policy adherence. The repo is organised to support reproducible experiments, detailed logging, and post-hoc analysis.
+This repository contains code to analyse Grok-4 on Terminal-Bench, introduce diagnostic metrics, and ship a revised task that stresses long-context policy adherence. The repo is organised to support reproducible experiments, detailed logging, and post-hoc analysis.
 
 ## Repository Layout
 
