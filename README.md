@@ -164,3 +164,11 @@ This computes:
 - Store additional aggregated outputs under `reports/` for easy reference in future deliverables.
 
 
+
+## Milestones
+
+- **M1** – Provisioned the reproducible Terminal-Bench pipeline and enumerated the Grok-4 task list.
+- **M2** – Ran Grok-4 baseline trials and archived manifests/logs for analysis.
+- **M3** – Integrated the CA/PR/SRS diagnostic judge scripts.
+- **M4** – Authored the long-context revision of `conda-env-conflict-resolution` with enforced constraints.
+
