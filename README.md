@@ -146,9 +146,9 @@ This computes:
 
 - **Baseline success evidence:** `benchmarks/tasks/terminal-bench/M2_raw_logs/runs_conda-env-conflict-resolution_20250930025617/conda-env-conflict-resolution_trial4_20250930025617/results.json`
 - **Revised task prompt:** `benchmarks/tasks/terminal-bench/tasks/conda-env-conflict-resolution-revised/task.yaml`
-- **Synthetic metrics:** `M4_raw_logs/conda-env-conflict-resolution-revised_trial1_20250930181911_synthetic_agent.metrics.json`
-- **Synthetic command trace:** `M4_raw_logs/conda-env-conflict-resolution-revised_trial1_20250930181911_synthetic_agent.log`
-- **Synthetic harness bundle:** `benchmarks/tasks/terminal-bench/M4_raw_logs/runs_conda-env-conflict-resolution-revised_20250930190042/`
+- **metrics for long context synthetic task:** `M4_raw_logs/conda-env-conflict-resolution-revised_trial1_20250930181911_synthetic_agent.metrics.json`
+- **command trace for synthetic long context task** `M4_raw_logs/conda-env-conflict-resolution-revised_trial1_20250930181911_synthetic_agent.log`
+- **harness bundle for synthetic long context task:** `benchmarks/tasks/terminal-bench/M4_raw_logs/runs_conda-env-conflict-resolution-revised_20250930190042/`
 
 ## Troubleshooting
 
