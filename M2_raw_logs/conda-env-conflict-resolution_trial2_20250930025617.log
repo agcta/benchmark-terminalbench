@@ -1,0 +1,20 @@
+Starting harness run
+Run ID: conda-env-conflict-resolution_trial2_20250930025617
+/usr/local/Cellar/python@3.12/3.12.11_1/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/events.py:88: RuntimeWarning: The executor did not finishing joining its threads within 300 seconds.
+  self._context.run(self._callback, *self._args)
+Agent timed out after 1000.0s for task conda-env-conflict-resolution.
+  Running tasks (1/1, Accuracy: 0.00%) - Last: conda-env-conflict-resolution ✗ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:22:19
+
+Results Summary:
++-------------------+---------+
+| Metric            | Value   |
++===================+=========+
+| Resolved Trials   | 0       |
++-------------------+---------+
+| Unresolved Trials | 1       |
++-------------------+---------+
+| Accuracy          | 0.00%   |
++-------------------+---------+
+
+Results written to 
+/Users/arijit/Desktop/projects/benchmarking/benchmarks/tasks/terminal-bench/M2_raw_logs/runs_conda-env-conflict-resolution_20250930025617/conda-env-conflict-resolution_trial2_20250930025617/results.json

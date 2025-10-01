@@ -1,0 +1,110 @@
+{
+  "accelerate-maximal-square": {
+    "task_id": "accelerate-maximal-square",
+    "tc": 0.4,
+    "constraint_adherence": 0.93,
+    "process_redundancy": 0.12,
+    "selective_reasoning_failure_rate": 0.15,
+    "reason": {
+      "constraint_adherence": "Occasional use of disallowed profiling tools while tuning the loop.",
+      "process_redundancy": "Multiple attempts at grid tiling before converging on optimal parameters.",
+      "selective_reasoning_failure_rate": "Kernel launch failures repeated twice before adjusting block sizes."
+    }
+  },
+  "acl-permissions-inheritance": {
+    "task_id": "acl-permissions-inheritance",
+    "tc": 0.2,
+    "constraint_adherence": 0.88,
+    "process_redundancy": 0.25,
+    "selective_reasoning_failure_rate": 0.3,
+    "reason": {
+      "constraint_adherence": "Agent tried `sudo` to inspect ownership despite policy ban.",
+      "process_redundancy": "Cyclical chmod/chown loops while exploring inheritance edge cases.",
+      "selective_reasoning_failure_rate": "Repeated identical `setfacl` invocations that failed due to wrong mask."
+    }
+  },
+  "adaptive-rejection-sampler": {
+    "task_id": "adaptive-rejection-sampler",
+    "tc": 0.2,
+    "constraint_adherence": 0.96,
+    "process_redundancy": 0.18,
+    "selective_reasoning_failure_rate": 0.1,
+    "reason": {
+      "constraint_adherence": "Stayed within offline tooling aside from a single stray curl attempt.",
+      "process_redundancy": "Brute-force tuning of rejection envelopes caused redundant recomputations.",
+      "selective_reasoning_failure_rate": "Sampler rejected the same parameter triple three times before adjusting step size."
+    }
+  },
+  "add-benchmark-lm-eval-harness": {
+    "task_id": "add-benchmark-lm-eval-harness",
+    "tc": 0.2,
+    "constraint_adherence": 0.92,
+    "process_redundancy": 0.22,
+    "selective_reasoning_failure_rate": 0.2,
+    "reason": {
+      "constraint_adherence": "Attempted to fetch remote leaderboards despite offline constraint.",
+      "process_redundancy": "Iterated through repeated harness bootstrap scripts after missing env vars.",
+      "selective_reasoning_failure_rate": "Replayed the failing harness command three times before editing the config."
+    }
+  },
+  "aimo-airline-departures": {
+    "task_id": "aimo-airline-departures",
+    "tc": 0.0,
+    "constraint_adherence": 0.85,
+    "process_redundancy": 0.35,
+    "selective_reasoning_failure_rate": 0.4,
+    "reason": {
+      "constraint_adherence": "Issued several network queries to fetch live schedules.",
+      "process_redundancy": "Looped between SQL dumps and CSV exports without new information.",
+      "selective_reasoning_failure_rate": "Repeated the same failing ETL pipeline step thrice in succession."
+    }
+  },
+  "analyze-access-logs": {
+    "task_id": "analyze-access-logs",
+    "tc": 0.2,
+    "constraint_adherence": 0.95,
+    "process_redundancy": 0.14,
+    "selective_reasoning_failure_rate": 0.12,
+    "reason": {
+      "constraint_adherence": "Respected offline requirement except one attempt to install fancy tailing tool.",
+      "process_redundancy": "Multiple grep/awk sweeps over identical log windows.",
+      "selective_reasoning_failure_rate": "Ran the same malformed regex three times before adjusting the pattern."
+    }
+  },
+  "amuse-install": {
+    "task_id": "amuse-install",
+    "tc": 0.4,
+    "constraint_adherence": 0.9,
+    "process_redundancy": 0.2,
+    "selective_reasoning_failure_rate": 0.18,
+    "reason": {
+      "constraint_adherence": "Tried to pip install missing dependency instead of using bundled wheel.",
+      "process_redundancy": "Rebuilt the same C extension twice after misconfigured flags.",
+      "selective_reasoning_failure_rate": "Installer retried the failing make target three times prior to patching."
+    }
+  },
+  "build-linux-kernel-qemu": {
+    "task_id": "build-linux-kernel-qemu",
+    "tc": 0.2,
+    "constraint_adherence": 0.87,
+    "process_redundancy": 0.32,
+    "selective_reasoning_failure_rate": 0.25,
+    "reason": {
+      "constraint_adherence": "Attempted to apt-get debug symbols on the air-gapped image.",
+      "process_redundancy": "Recompiled kernels with small config tweaks without cleaning artifacts.",
+      "selective_reasoning_failure_rate": "Repeat boot attempts with identical kernel image before adjusting QEMU flags."
+    }
+  },
+  "configure-git-webserver": {
+    "task_id": "configure-git-webserver",
+    "tc": 0.2,
+    "constraint_adherence": 0.94,
+    "process_redundancy": 0.16,
+    "selective_reasoning_failure_rate": 0.15,
+    "reason": {
+      "constraint_adherence": "Used systemctl to restart service despite requirement to stay user-level.",
+      "process_redundancy": "Replayed git hook setup scripts multiple times after path issues.",
+      "selective_reasoning_failure_rate": "Restarted the failing webhook task thrice before fixing permissions."
+    }
+  }
+}

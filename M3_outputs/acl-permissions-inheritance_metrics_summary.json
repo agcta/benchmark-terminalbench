@@ -1,0 +1,80 @@
+{
+  "acl-permissions-inheritance_trial1_mock": {
+    "task_id": "acl-permissions-inheritance",
+    "trial_id": "acl-permissions-inheritance_trial1_mock",
+    "tc": 0,
+    "constraint_adherence": 0.84,
+    "process_redundancy": 0.3,
+    "selective_reasoning_failure_rate": 0.32,
+    "reason": {
+      "constraint_adherence": "Invoked `sudo` to inspect ownership despite explicit prohibition.",
+      "process_redundancy": "Oscillated between chmod and chown commands without documenting results.",
+      "selective_reasoning_failure_rate": "Repeated the same failing `setfacl` syntax three times before reading the man page."
+    }
+  },
+  "acl-permissions-inheritance_trial2_mock": {
+    "task_id": "acl-permissions-inheritance",
+    "trial_id": "acl-permissions-inheritance_trial2_mock",
+    "tc": 1,
+    "constraint_adherence": 0.92,
+    "process_redundancy": 0.18,
+    "selective_reasoning_failure_rate": 0.18,
+    "reason": {
+      "constraint_adherence": "Remained under user privileges and used only bundled ACL tools.",
+      "process_redundancy": "Performed two verification passes before final inheritance test.",
+      "selective_reasoning_failure_rate": "Failure on first inheritance test was followed by immediate correction."
+    }
+  },
+  "acl-permissions-inheritance_trial3_mock": {
+    "task_id": "acl-permissions-inheritance",
+    "trial_id": "acl-permissions-inheritance_trial3_mock",
+    "tc": 0,
+    "constraint_adherence": 0.89,
+    "process_redundancy": 0.24,
+    "selective_reasoning_failure_rate": 0.28,
+    "reason": {
+      "constraint_adherence": "Tried to install `getfacl` updates via apt.",
+      "process_redundancy": "Relied on trial-and-error to replicate group scenarios, repeating commands twice.",
+      "selective_reasoning_failure_rate": "Three identical `setfacl -R` attempts failed before the path was fixed."
+    }
+  },
+  "acl-permissions-inheritance_trial4_mock": {
+    "task_id": "acl-permissions-inheritance",
+    "trial_id": "acl-permissions-inheritance_trial4_mock",
+    "tc": 0,
+    "constraint_adherence": 0.9,
+    "process_redundancy": 0.27,
+    "selective_reasoning_failure_rate": 0.34,
+    "reason": {
+      "constraint_adherence": "Switched to root-owned directories without rechecking policy docs.",
+      "process_redundancy": "Re-tested the same directory tree four times after each failure.",
+      "selective_reasoning_failure_rate": "Two identical `chmod --reference` invocations failed before exploring masks."
+    }
+  },
+  "acl-permissions-inheritance_trial5_mock": {
+    "task_id": "acl-permissions-inheritance",
+    "trial_id": "acl-permissions-inheritance_trial5_mock",
+    "tc": 0,
+    "constraint_adherence": 0.85,
+    "process_redundancy": 0.26,
+    "selective_reasoning_failure_rate": 0.31,
+    "reason": {
+      "constraint_adherence": "Attempted to restart the service via systemctl, violating constraints.",
+      "process_redundancy": "Went back and forth between two directory hierarchies repeatedly.",
+      "selective_reasoning_failure_rate": "The incorrect ACL rule was applied three times before noticing the typo."
+    }
+  },
+  "average": {
+    "task_id": "acl-permissions-inheritance",
+    "trial_id": "average",
+    "tc": 0.2,
+    "constraint_adherence": 0.8799999999999999,
+    "process_redundancy": 0.25,
+    "selective_reasoning_failure_rate": 0.28600000000000003,
+    "reason": {
+      "constraint_adherence": "Mean of per-trial CA values across five runs.",
+      "process_redundancy": "Mean of per-trial PR values across five runs.",
+      "selective_reasoning_failure_rate": "Mean of per-trial SRS values across five runs."
+    }
+  }
+}

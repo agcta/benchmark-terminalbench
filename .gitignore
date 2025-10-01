@@ -1,0 +1,18 @@
+# Virtual environments
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local artifacts
+artifacts/
+external/
+reports/
+notebooks/
+.env
+openai_api_key.txt
+
+# OS files
+.DS_Store

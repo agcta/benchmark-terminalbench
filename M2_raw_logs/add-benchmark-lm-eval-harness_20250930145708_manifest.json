@@ -1,0 +1,33 @@
+{
+  "task_id": "add-benchmark-lm-eval-harness",
+  "model": "grok-4",
+  "network_mode": "offline",
+  "trials": 5,
+  "logs": [
+    {
+      "trial": 1,
+      "path": "M2_raw_logs/add-benchmark-lm-eval-harness_trial1_20250930145708.log",
+      "status": "completed"
+    },
+    {
+      "trial": 2,
+      "path": "M2_raw_logs/add-benchmark-lm-eval-harness_trial2_20250930145708.log",
+      "status": "completed"
+    },
+    {
+      "trial": 3,
+      "path": "M2_raw_logs/add-benchmark-lm-eval-harness_trial3_20250930145708.log",
+      "status": "completed"
+    },
+    {
+      "trial": 4,
+      "path": "M2_raw_logs/add-benchmark-lm-eval-harness_trial4_20250930145708.log",
+      "status": "completed"
+    },
+    {
+      "trial": 5,
+      "path": "M2_raw_logs/add-benchmark-lm-eval-harness_trial5_20250930145708.log",
+      "status": "completed"
+    }
+  ]
+}

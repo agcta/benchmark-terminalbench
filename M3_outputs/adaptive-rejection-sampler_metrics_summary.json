@@ -1,0 +1,80 @@
+{
+  "adaptive-rejection-sampler_trial1_mock": {
+    "task_id": "adaptive-rejection-sampler",
+    "trial_id": "adaptive-rejection-sampler_trial1_mock",
+    "tc": 0,
+    "constraint_adherence": 0.95,
+    "process_redundancy": 0.22,
+    "selective_reasoning_failure_rate": 0.14,
+    "reason": {
+      "constraint_adherence": "One attempt to fetch reference plots from the internet was blocked.",
+      "process_redundancy": "Regenerated envelopes multiple times when convergence stalled.",
+      "selective_reasoning_failure_rate": "Sampler retries used identical parameters three times before tuning the slope."
+    }
+  },
+  "adaptive-rejection-sampler_trial2_mock": {
+    "task_id": "adaptive-rejection-sampler",
+    "trial_id": "adaptive-rejection-sampler_trial2_mock",
+    "tc": 0,
+    "constraint_adherence": 0.97,
+    "process_redundancy": 0.2,
+    "selective_reasoning_failure_rate": 0.12,
+    "reason": {
+      "constraint_adherence": "Relied solely on provided scripts and cached data.",
+      "process_redundancy": "Two redundant evaluations of the log-density while checking bounds.",
+      "selective_reasoning_failure_rate": "Only one duplicated failure before switching to adaptive step sizing."
+    }
+  },
+  "adaptive-rejection-sampler_trial3_mock": {
+    "task_id": "adaptive-rejection-sampler",
+    "trial_id": "adaptive-rejection-sampler_trial3_mock",
+    "tc": 1,
+    "constraint_adherence": 0.99,
+    "process_redundancy": 0.12,
+    "selective_reasoning_failure_rate": 0.05,
+    "reason": {
+      "constraint_adherence": "No forbidden commands or external calls detected.",
+      "process_redundancy": "Minimal re-sampling once the control points were corrected.",
+      "selective_reasoning_failure_rate": "A single failure led to immediate control-point adjustment."
+    }
+  },
+  "adaptive-rejection-sampler_trial4_mock": {
+    "task_id": "adaptive-rejection-sampler",
+    "trial_id": "adaptive-rejection-sampler_trial4_mock",
+    "tc": 0,
+    "constraint_adherence": 0.94,
+    "process_redundancy": 0.21,
+    "selective_reasoning_failure_rate": 0.16,
+    "reason": {
+      "constraint_adherence": "Attempted to pip install scipy 1.11 for diagnostics.",
+      "process_redundancy": "Recomputed envelopes twice after forgetting to persist the seed.",
+      "selective_reasoning_failure_rate": "Repeated the same out-of-bounds proposal three times before capping variance."
+    }
+  },
+  "adaptive-rejection-sampler_trial5_mock": {
+    "task_id": "adaptive-rejection-sampler",
+    "trial_id": "adaptive-rejection-sampler_trial5_mock",
+    "tc": 0,
+    "constraint_adherence": 0.95,
+    "process_redundancy": 0.19,
+    "selective_reasoning_failure_rate": 0.13,
+    "reason": {
+      "constraint_adherence": "Stayed offline but wrote temporary files outside the sandbox once.",
+      "process_redundancy": "Looped through the same validation histogram several times.",
+      "selective_reasoning_failure_rate": "Sampler failure repeated twice before adjusting the burn-in length."
+    }
+  },
+  "average": {
+    "task_id": "adaptive-rejection-sampler",
+    "trial_id": "average",
+    "tc": 0.2,
+    "constraint_adherence": 0.96,
+    "process_redundancy": 0.188,
+    "selective_reasoning_failure_rate": 0.12,
+    "reason": {
+      "constraint_adherence": "Mean of per-trial CA values across five runs.",
+      "process_redundancy": "Mean of per-trial PR values across five runs.",
+      "selective_reasoning_failure_rate": "Mean of per-trial SRS values across five runs."
+    }
+  }
+}

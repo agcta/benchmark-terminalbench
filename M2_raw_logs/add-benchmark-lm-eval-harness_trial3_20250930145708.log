@@ -1,0 +1,20 @@
+Starting harness run
+Run ID: add-benchmark-lm-eval-harness_trial3_20250930145708
+Running tasks (1/1, Accuracy: 0.00%) - Last: add-benchmark-lm-e… … 
+
+Results Summary:
++-------------------+---------+
+| Metric            | Value   |
++===================+=========+
+| Resolved Trials   | 0       |
++-------------------+---------+
+| Unresolved Trials | 1       |
++-------------------+---------+
+| Accuracy          | 0.00%   |
++-------------------+---------+
+
+Results written to 
+/Users/arijit/Desktop/projects/benchmarking/benchmarks/tasks/termin
+al-bench/M2_raw_logs/runs_add-benchmark-lm-eval-harness_20250930145
+708/add-benchmark-lm-eval-harness_trial3_20250930145708/results.jso
+n

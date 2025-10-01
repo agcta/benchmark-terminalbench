@@ -1,0 +1,19 @@
+Starting harness run
+Run ID: configure-git-webserver_trial1_20250930062435
+Running tasks (1/1, Accuracy: 0.00%) - Last: configure-git-webs… … 
+
+Results Summary:
++-------------------+---------+
+| Metric            | Value   |
++===================+=========+
+| Resolved Trials   | 0       |
++-------------------+---------+
+| Unresolved Trials | 1       |
++-------------------+---------+
+| Accuracy          | 0.00%   |
++-------------------+---------+
+
+Results written to 
+/Users/arijit/Desktop/projects/benchmarking/benchmarks/tasks/termin
+al-bench/M2_raw_logs/runs_configure-git-webserver_20250930062435/co
+nfigure-git-webserver_trial1_20250930062435/results.json

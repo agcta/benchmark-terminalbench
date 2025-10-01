@@ -1,0 +1,19 @@
+Starting harness run
+Run ID: analyze-access-logs_trial2_20250930151047
+Running tasks (1/1, Accuracy: 0.00%) - Last: analyze-access-log… … 
+
+Results Summary:
++-------------------+---------+
+| Metric            | Value   |
++===================+=========+
+| Resolved Trials   | 0       |
++-------------------+---------+
+| Unresolved Trials | 1       |
++-------------------+---------+
+| Accuracy          | 0.00%   |
++-------------------+---------+
+
+Results written to 
+/Users/arijit/Desktop/projects/benchmarking/benchmarks/tasks/termin
+al-bench/M2_raw_logs/runs_analyze-access-logs_20250930151047/analyz
+e-access-logs_trial2_20250930151047/results.json

@@ -1,0 +1,80 @@
+{
+  "add-benchmark-lm-eval-harness_trial1_mock": {
+    "task_id": "add-benchmark-lm-eval-harness",
+    "trial_id": "add-benchmark-lm-eval-harness_trial1_mock",
+    "tc": 0,
+    "constraint_adherence": 0.91,
+    "process_redundancy": 0.24,
+    "selective_reasoning_failure_rate": 0.22,
+    "reason": {
+      "constraint_adherence": "Tried to curl the upstream leaderboard for comparison.",
+      "process_redundancy": "Reran the harness init script three times due to env var mixups.",
+      "selective_reasoning_failure_rate": "Same missing package error triggered twice before editing requirements."
+    }
+  },
+  "add-benchmark-lm-eval-harness_trial2_mock": {
+    "task_id": "add-benchmark-lm-eval-harness",
+    "trial_id": "add-benchmark-lm-eval-harness_trial2_mock",
+    "tc": 0,
+    "constraint_adherence": 0.93,
+    "process_redundancy": 0.21,
+    "selective_reasoning_failure_rate": 0.19,
+    "reason": {
+      "constraint_adherence": "Used only cached model artefacts after the initial warning.",
+      "process_redundancy": "Two redundant invocations of the `lm_eval` bootstrap command.",
+      "selective_reasoning_failure_rate": "Repeated failure of the dataset mount twice before adjusting paths."
+    }
+  },
+  "add-benchmark-lm-eval-harness_trial3_mock": {
+    "task_id": "add-benchmark-lm-eval-harness",
+    "trial_id": "add-benchmark-lm-eval-harness_trial3_mock",
+    "tc": 0,
+    "constraint_adherence": 0.9,
+    "process_redundancy": 0.26,
+    "selective_reasoning_failure_rate": 0.24,
+    "reason": {
+      "constraint_adherence": "Attempted to apt-get jq for log parsing.",
+      "process_redundancy": "Bounced between two docker compose variants repeatedly.",
+      "selective_reasoning_failure_rate": "Replayed the failing docker compose up command three times."
+    }
+  },
+  "add-benchmark-lm-eval-harness_trial4_mock": {
+    "task_id": "add-benchmark-lm-eval-harness",
+    "trial_id": "add-benchmark-lm-eval-harness_trial4_mock",
+    "tc": 1,
+    "constraint_adherence": 0.96,
+    "process_redundancy": 0.16,
+    "selective_reasoning_failure_rate": 0.12,
+    "reason": {
+      "constraint_adherence": "Strictly followed the offline instructions when integrating harness.",
+      "process_redundancy": "Only one redundant harness reboot before success.",
+      "selective_reasoning_failure_rate": "One failure was enough to trigger configuration fix."
+    }
+  },
+  "add-benchmark-lm-eval-harness_trial5_mock": {
+    "task_id": "add-benchmark-lm-eval-harness",
+    "trial_id": "add-benchmark-lm-eval-harness_trial5_mock",
+    "tc": 0,
+    "constraint_adherence": 0.92,
+    "process_redundancy": 0.23,
+    "selective_reasoning_failure_rate": 0.21,
+    "reason": {
+      "constraint_adherence": "Tried to ping the evaluation registry for metadata.",
+      "process_redundancy": "Repeated the same harness upload script twice.",
+      "selective_reasoning_failure_rate": "The same missing credential error surfaced three times before being patched."
+    }
+  },
+  "average": {
+    "task_id": "add-benchmark-lm-eval-harness",
+    "trial_id": "average",
+    "tc": 0.2,
+    "constraint_adherence": 0.924,
+    "process_redundancy": 0.22000000000000003,
+    "selective_reasoning_failure_rate": 0.196,
+    "reason": {
+      "constraint_adherence": "Mean of per-trial CA values across five runs.",
+      "process_redundancy": "Mean of per-trial PR values across five runs.",
+      "selective_reasoning_failure_rate": "Mean of per-trial SRS values across five runs."
+    }
+  }
+}

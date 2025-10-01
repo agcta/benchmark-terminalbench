@@ -1,0 +1,19 @@
+Starting harness run
+Run ID: build-linux-kernel-qemu_trial5_20250930054638
+Running tasks (1/1, Accuracy: 0.00%) - Last: build-linux-kernel… … 
+
+Results Summary:
++-------------------+---------+
+| Metric            | Value   |
++===================+=========+
+| Resolved Trials   | 0       |
++-------------------+---------+
+| Unresolved Trials | 1       |
++-------------------+---------+
+| Accuracy          | 0.00%   |
++-------------------+---------+
+
+Results written to 
+/Users/arijit/Desktop/projects/benchmarking/benchmarks/tasks/termin
+al-bench/M2_raw_logs/runs_build-linux-kernel-qemu_20250930054638/bu
+ild-linux-kernel-qemu_trial5_20250930054638/results.json

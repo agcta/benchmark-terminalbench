@@ -1,0 +1,19 @@
+Starting harness run
+Run ID: aimo-airline-departures_trial5_20250930150052
+Running tasks (1/1, Accuracy: 0.00%) - Last: aimo-airline-depar… … 
+
+Results Summary:
++-------------------+---------+
+| Metric            | Value   |
++===================+=========+
+| Resolved Trials   | 0       |
++-------------------+---------+
+| Unresolved Trials | 1       |
++-------------------+---------+
+| Accuracy          | 0.00%   |
++-------------------+---------+
+
+Results written to 
+/Users/arijit/Desktop/projects/benchmarking/benchmarks/tasks/termin
+al-bench/M2_raw_logs/runs_aimo-airline-departures_20250930150052/ai
+mo-airline-departures_trial5_20250930150052/results.json

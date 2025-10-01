@@ -1,0 +1,19 @@
+Starting harness run
+Run ID: acl-permissions-inheritance_trial3_20250930073347
+Running tasks (1/1, Accuracy: 0.00%) - Last: acl-permissions-in… … 
+
+Results Summary:
++-------------------+---------+
+| Metric            | Value   |
++===================+=========+
+| Resolved Trials   | 0       |
++-------------------+---------+
+| Unresolved Trials | 1       |
++-------------------+---------+
+| Accuracy          | 0.00%   |
++-------------------+---------+
+
+Results written to 
+/Users/arijit/Desktop/projects/benchmarking/benchmarks/tasks/termin
+al-bench/M2_raw_logs/runs_acl-permissions-inheritance_2025093007334
+7/acl-permissions-inheritance_trial3_20250930073347/results.json

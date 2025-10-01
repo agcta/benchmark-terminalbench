@@ -1,0 +1,19 @@
+Starting harness run
+Run ID: adaptive-rejection-sampler_trial5_20250930145307
+Running tasks (1/1, Accuracy: 0.00%) - Last: adaptive-rejection… … 
+
+Results Summary:
++-------------------+---------+
+| Metric            | Value   |
++===================+=========+
+| Resolved Trials   | 0       |
++-------------------+---------+
+| Unresolved Trials | 1       |
++-------------------+---------+
+| Accuracy          | 0.00%   |
++-------------------+---------+
+
+Results written to 
+/Users/arijit/Desktop/projects/benchmarking/benchmarks/tasks/termin
+al-bench/M2_raw_logs/runs_adaptive-rejection-sampler_20250930145307
+/adaptive-rejection-sampler_trial5_20250930145307/results.json

@@ -1,0 +1,5 @@
+{
+  "forbidden_commands": ["sudo", "apt", "pip install", "conda install", "curl", "wget"],
+  "redundancy_window": 12,
+  "failure_regex": ["Command failed", "[Ee]rror", "EXIT STATUS: [1-9]", "FailureMode"]
+}

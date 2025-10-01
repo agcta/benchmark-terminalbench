@@ -1,0 +1,33 @@
+{
+  "task_id": "adaptive-rejection-sampler",
+  "model": "grok-4",
+  "network_mode": "offline",
+  "trials": 5,
+  "logs": [
+    {
+      "trial": 1,
+      "path": "M2_raw_logs/adaptive-rejection-sampler_trial1_20250930145307.log",
+      "status": "completed"
+    },
+    {
+      "trial": 2,
+      "path": "M2_raw_logs/adaptive-rejection-sampler_trial2_20250930145307.log",
+      "status": "completed"
+    },
+    {
+      "trial": 3,
+      "path": "M2_raw_logs/adaptive-rejection-sampler_trial3_20250930145307.log",
+      "status": "completed"
+    },
+    {
+      "trial": 4,
+      "path": "M2_raw_logs/adaptive-rejection-sampler_trial4_20250930145307.log",
+      "status": "completed"
+    },
+    {
+      "trial": 5,
+      "path": "M2_raw_logs/adaptive-rejection-sampler_trial5_20250930145307.log",
+      "status": "completed"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "log_file": "M2_raw_logs/dependency-hell-2_trial1_20250930T005325Z.log",
+    "constraint_adherence": 1.0,
+    "process_redundancy": 0.0,
+    "selective_reasoning_failure_rate": 0.0
+  },
+  {
+    "log_file": "M2_raw_logs/dependency-hell-2_trial1_20250930T005444Z.log",
+    "constraint_adherence": 1.0,
+    "process_redundancy": 0.0,
+    "selective_reasoning_failure_rate": 0.0
+  },
+  {
+    "log_file": "M2_raw_logs/dependency-hell-2_trial1_20250930T010251Z.log",
+    "constraint_adherence": 1.0,
+    "process_redundancy": 0.0,
+    "selective_reasoning_failure_rate": 0.0
+  },
+  {
+    "log_file": "M2_raw_logs/dependency-hell-2_trial2_20250930T005444Z.log",
+    "constraint_adherence": 1.0,
+    "process_redundancy": 0.0,
+    "selective_reasoning_failure_rate": 0.0
+  },
+  {
+    "log_file": "M2_raw_logs/dependency-hell-2_trial2_20250930T010251Z.log",
+    "constraint_adherence": 1.0,
+    "process_redundancy": 0.0,
+    "selective_reasoning_failure_rate": 0.0
+  },
+  {
+    "log_file": "M2_raw_logs/dependency-hell-2_trial3_20250930T005444Z.log",
+    "constraint_adherence": 1.0,
+    "process_redundancy": 0.0,
+    "selective_reasoning_failure_rate": 0.0
+  },
+  {
+    "log_file": "M2_raw_logs/dependency-hell-2_trial3_20250930T010251Z.log",
+    "constraint_adherence": 1.0,
+    "process_redundancy": 0.0,
+    "selective_reasoning_failure_rate": 0.0
+  },
+  {
+    "log_file": "M2_raw_logs/dependency-hell-2_trial4_20250930T005444Z.log",
+    "constraint_adherence": 1.0,
+    "process_redundancy": 0.0,
+    "selective_reasoning_failure_rate": 0.0
+  },
+  {
+    "log_file": "M2_raw_logs/dependency-hell-2_trial4_20250930T010251Z.log",
+    "constraint_adherence": 1.0,
+    "process_redundancy": 0.0,
+    "selective_reasoning_failure_rate": 0.0
+  },
+  {
+    "log_file": "M2_raw_logs/dependency-hell-2_trial5_20250930T010251Z.log",
+    "constraint_adherence": 1.0,
+    "process_redundancy": 0.0,
+    "selective_reasoning_failure_rate": 0.0
+  },
+  {
+    "log_file": "M2_raw_logs/performance-opt-3_trial1_20250930T005504Z.log",
+    "constraint_adherence": 1.0,
+    "process_redundancy": 0.0,
+    "selective_reasoning_failure_rate": 0.0
+  },
+  {
+    "log_file": "M2_raw_logs/performance-opt-3_trial2_20250930T005504Z.log",
+    "constraint_adherence": 1.0,
+    "process_redundancy": 0.0,
+    "selective_reasoning_failure_rate": 0.0
+  },
+  {
+    "log_file": "M2_raw_logs/performance-opt-3_trial3_20250930T005504Z.log",
+    "constraint_adherence": 1.0,
+    "process_redundancy": 0.0,
+    "selective_reasoning_failure_rate": 0.0
+  },
+  {
+    "log_file": "M2_raw_logs/performance-opt-3_trial4_20250930T005504Z.log",
+    "constraint_adherence": 1.0,
+    "process_redundancy": 0.0,
+    "selective_reasoning_failure_rate": 0.0
+  },
+  {
+    "log_file": "M2_raw_logs/performance-opt-3_trial5_20250930T005504Z.log",
+    "constraint_adherence": 1.0,
+    "process_redundancy": 0.0,
+    "selective_reasoning_failure_rate": 0.0
+  },
+  {
+    "log_file": "M2_raw_logs/security-patch-1_trial1_20250930T005454Z.log",
+    "constraint_adherence": 1.0,
+    "process_redundancy": 0.0,
+    "selective_reasoning_failure_rate": 0.0
+  },
+  {
+    "log_file": "M2_raw_logs/security-patch-1_trial2_20250930T005454Z.log",
+    "constraint_adherence": 1.0,
+    "process_redundancy": 0.0,
+    "selective_reasoning_failure_rate": 0.0
+  },
+  {
+    "log_file": "M2_raw_logs/security-patch-1_trial3_20250930T005454Z.log",
+    "constraint_adherence": 1.0,
+    "process_redundancy": 0.0,
+    "selective_reasoning_failure_rate": 0.0
+  },
+  {
+    "log_file": "M2_raw_logs/security-patch-1_trial4_20250930T005454Z.log",
+    "constraint_adherence": 1.0,
+    "process_redundancy": 0.0,
+    "selective_reasoning_failure_rate": 0.0
+  },
+  {
+    "log_file": "M2_raw_logs/security-patch-1_trial5_20250930T005454Z.log",
+    "constraint_adherence": 1.0,
+    "process_redundancy": 0.0,
+    "selective_reasoning_failure_rate": 0.0
+  }
+]

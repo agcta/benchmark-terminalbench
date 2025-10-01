@@ -1,0 +1,19 @@
+Starting harness run
+Run ID: accelerate-maximal-square_trial2_20250930072822
+Running tasks (1/1, Accuracy: 0.00%) - Last: accelerate-maximal… … 
+
+Results Summary:
++-------------------+---------+
+| Metric            | Value   |
++===================+=========+
+| Resolved Trials   | 0       |
++-------------------+---------+
+| Unresolved Trials | 1       |
++-------------------+---------+
+| Accuracy          | 0.00%   |
++-------------------+---------+
+
+Results written to 
+/Users/arijit/Desktop/projects/benchmarking/benchmarks/tasks/termin
+al-bench/M2_raw_logs/runs_accelerate-maximal-square_20250930072822/
+accelerate-maximal-square_trial2_20250930072822/results.json

@@ -1,0 +1,17 @@
+Starting harness run
+Run ID: conda-env-conflict-resolution_trial3_20250930025617
+  Running tasks (1/1, Accuracy: 0.00%) - Last: conda-env-conflict-resolution ✗ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:04:21
+
+Results Summary:
++-------------------+---------+
+| Metric            | Value   |
++===================+=========+
+| Resolved Trials   | 0       |
++-------------------+---------+
+| Unresolved Trials | 1       |
++-------------------+---------+
+| Accuracy          | 0.00%   |
++-------------------+---------+
+
+Results written to 
+/Users/arijit/Desktop/projects/benchmarking/benchmarks/tasks/terminal-bench/M2_raw_logs/runs_conda-env-conflict-resolution_20250930025617/conda-env-conflict-resolution_trial3_20250930025617/results.json

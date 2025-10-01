@@ -1,0 +1,33 @@
+{
+  "task_id": "accelerate-maximal-square",
+  "model": "grok-4",
+  "network_mode": "offline",
+  "trials": 5,
+  "logs": [
+    {
+      "trial": 1,
+      "path": "M2_raw_logs/accelerate-maximal-square_trial1_20250930072822.log",
+      "status": "completed"
+    },
+    {
+      "trial": 2,
+      "path": "M2_raw_logs/accelerate-maximal-square_trial2_20250930072822.log",
+      "status": "completed"
+    },
+    {
+      "trial": 3,
+      "path": "M2_raw_logs/accelerate-maximal-square_trial3_20250930072822.log",
+      "status": "completed"
+    },
+    {
+      "trial": 4,
+      "path": "M2_raw_logs/accelerate-maximal-square_trial4_20250930072822.log",
+      "status": "completed"
+    },
+    {
+      "trial": 5,
+      "path": "M2_raw_logs/accelerate-maximal-square_trial5_20250930072822.log",
+      "status": "completed"
+    }
+  ]
+}

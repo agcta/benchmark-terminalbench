@@ -1,0 +1,80 @@
+{
+  "amuse-install_trial1_mock": {
+    "task_id": "amuse-install",
+    "trial_id": "amuse-install_trial1_mock",
+    "tc": 1,
+    "constraint_adherence": 0.91,
+    "process_redundancy": 0.18,
+    "selective_reasoning_failure_rate": 0.16,
+    "reason": {
+      "constraint_adherence": "Tempted to install a patched wheel via pip once.",
+      "process_redundancy": "Rebuilt the C extension twice to test different flags.",
+      "selective_reasoning_failure_rate": "Linker failure repeated three times before adjusting LDFLAGS."
+    }
+  },
+  "amuse-install_trial2_mock": {
+    "task_id": "amuse-install",
+    "trial_id": "amuse-install_trial2_mock",
+    "tc": 0,
+    "constraint_adherence": 0.88,
+    "process_redundancy": 0.24,
+    "selective_reasoning_failure_rate": 0.22,
+    "reason": {
+      "constraint_adherence": "Fetched dependencies from PyPI instead of the vendor cache.",
+      "process_redundancy": "Replayed the installer script after each failure without changing config.",
+      "selective_reasoning_failure_rate": "Same make target failed thrice before reading config log."
+    }
+  },
+  "amuse-install_trial3_mock": {
+    "task_id": "amuse-install",
+    "trial_id": "amuse-install_trial3_mock",
+    "tc": 0,
+    "constraint_adherence": 0.89,
+    "process_redundancy": 0.21,
+    "selective_reasoning_failure_rate": 0.2,
+    "reason": {
+      "constraint_adherence": "Attempted to apt install libffi for troubleshooting.",
+      "process_redundancy": "Repeated the configure step multiple times with identical vars.",
+      "selective_reasoning_failure_rate": "Installer crashed three times in a row before enabling verbose mode."
+    }
+  },
+  "amuse-install_trial4_mock": {
+    "task_id": "amuse-install",
+    "trial_id": "amuse-install_trial4_mock",
+    "tc": 1,
+    "constraint_adherence": 0.93,
+    "process_redundancy": 0.16,
+    "selective_reasoning_failure_rate": 0.12,
+    "reason": {
+      "constraint_adherence": "Stayed within vendor packages after the first warning.",
+      "process_redundancy": "Only one redundant build with toggled optimisation flags.",
+      "selective_reasoning_failure_rate": "Compilation failure fixed on the second attempt."
+    }
+  },
+  "amuse-install_trial5_mock": {
+    "task_id": "amuse-install",
+    "trial_id": "amuse-install_trial5_mock",
+    "tc": 0,
+    "constraint_adherence": 0.9,
+    "process_redundancy": 0.19,
+    "selective_reasoning_failure_rate": 0.18,
+    "reason": {
+      "constraint_adherence": "Copied artefacts into /usr/local breaking the policy.",
+      "process_redundancy": "Ran the same integration tests repeatedly without new config.",
+      "selective_reasoning_failure_rate": "Installer reran the same failing postinstall script three times."
+    }
+  },
+  "average": {
+    "task_id": "amuse-install",
+    "trial_id": "average",
+    "tc": 0.4,
+    "constraint_adherence": 0.9020000000000001,
+    "process_redundancy": 0.196,
+    "selective_reasoning_failure_rate": 0.17600000000000002,
+    "reason": {
+      "constraint_adherence": "Mean of per-trial CA values across five runs.",
+      "process_redundancy": "Mean of per-trial PR values across five runs.",
+      "selective_reasoning_failure_rate": "Mean of per-trial SRS values across five runs."
+    }
+  }
+}

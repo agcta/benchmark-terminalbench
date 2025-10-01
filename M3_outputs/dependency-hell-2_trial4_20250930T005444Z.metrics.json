@@ -1,0 +1,6 @@
+{
+  "log_file": "M2_raw_logs/dependency-hell-2_trial4_20250930T005444Z.log",
+  "constraint_adherence": 1.0,
+  "process_redundancy": 0.0,
+  "selective_reasoning_failure_rate": 0.0
+}

@@ -1,0 +1,69 @@
+# Azure DevOps-style pipeline template for Terminal-Bench Grok4 baseline runs
+# Parameters ensure every execution is auditable and constrained.
+
+parameters:
+  - name: task_id
+    type: string
+  - name: trials
+    type: number
+    default: 5
+  - name: grok_model
+    type: string
+    default: grok-4
+  - name: log_folder
+    type: string
+    default: M2_raw_logs
+  - name: allow_network
+    type: boolean
+    default: false
+
+stages:
+  - stage: RunBenchmark
+    displayName: "Run Terminal-Bench Task"
+    jobs:
+      - job: ExecuteTask
+        pool:
+          vmImage: ubuntu-22.04
+        steps:
+          - checkout: self
+            displayName: "Checkout repository"
+
+          - script: |
+              set -euo pipefail
+              echo "##[group]Validate pipeline parameters"
+              if [ "$ALLOW_NETWORK" = "false" ]; then
+                export TB_NETWORK_MODE="offline"
+              else
+                export TB_NETWORK_MODE="default"
+              fi
+              echo "Using Terminal-Bench network mode: $TB_NETWORK_MODE"
+              echo "##[endgroup]"
+            env:
+              ALLOW_NETWORK: ${{ parameters.allow_network }}
+            displayName: "Set execution policy"
+
+          - script: |
+              set -euo pipefail
+              python scripts/run_terminal_bench.py \
+                --task-id "${{ parameters.task_id }}" \
+                --trials "${{ parameters.trials }}" \
+                --model "${{ parameters.grok_model }}" \
+                --log-dir "${{ parameters.log_folder }}" \
+                --network-mode "$TB_NETWORK_MODE"
+            env:
+              TB_NETWORK_MODE: $(TB_NETWORK_MODE)
+              XAI_API_KEY: $(XAI_API_KEY)
+            displayName: "Execute Grok-4 trials"
+
+          - task: PublishBuildArtifacts@1
+            inputs:
+              PathtoPublish: ${{ parameters.log_folder }}
+              ArtifactName: "terminal-bench-logs-${{ parameters.task_id }}"
+            displayName: "Publish command logs"
+
+          - script: |
+              if grep -E "(curl|wget|apt-get|sudo)" ${{ parameters.log_folder }}/*; then
+                echo "##[error]Forbidden command detected"
+                exit 1
+              fi
+            displayName: "Security audit"

@@ -1,0 +1,19 @@
+Starting harness run
+Run ID: amuse-install_trial3_20250930150508
+Running tasks (1/1, Accuracy: 0.00%) - Last: amuse-install ✗ 100% …
+
+Results Summary:
++-------------------+---------+
+| Metric            | Value   |
++===================+=========+
+| Resolved Trials   | 0       |
++-------------------+---------+
+| Unresolved Trials | 1       |
++-------------------+---------+
+| Accuracy          | 0.00%   |
++-------------------+---------+
+
+Results written to 
+/Users/arijit/Desktop/projects/benchmarking/benchmarks/tasks/termin
+al-bench/M2_raw_logs/runs_amuse-install_20250930150508/amuse-instal
+l_trial3_20250930150508/results.json

@@ -1,0 +1,80 @@
+{
+  "configure-git-webserver_trial1_mock": {
+    "task_id": "configure-git-webserver",
+    "trial_id": "configure-git-webserver_trial1_mock",
+    "tc": 0,
+    "constraint_adherence": 0.92,
+    "process_redundancy": 0.18,
+    "selective_reasoning_failure_rate": 0.17,
+    "reason": {
+      "constraint_adherence": "Attempted to restart service via systemctl against policy.",
+      "process_redundancy": "Ran hook deployment script twice before editing base path.",
+      "selective_reasoning_failure_rate": "Webhook restart failed three times prior to permission fix."
+    }
+  },
+  "configure-git-webserver_trial2_mock": {
+    "task_id": "configure-git-webserver",
+    "trial_id": "configure-git-webserver_trial2_mock",
+    "tc": 0,
+    "constraint_adherence": 0.95,
+    "process_redundancy": 0.15,
+    "selective_reasoning_failure_rate": 0.14,
+    "reason": {
+      "constraint_adherence": "Stuck to user-level processes and cached binaries.",
+      "process_redundancy": "One redundant run of the provisioning playbook.",
+      "selective_reasoning_failure_rate": "Single webhook failure followed by immediate configuration correction."
+    }
+  },
+  "configure-git-webserver_trial3_mock": {
+    "task_id": "configure-git-webserver",
+    "trial_id": "configure-git-webserver_trial3_mock",
+    "tc": 0,
+    "constraint_adherence": 0.93,
+    "process_redundancy": 0.19,
+    "selective_reasoning_failure_rate": 0.16,
+    "reason": {
+      "constraint_adherence": "Used curl to check remote HTTPS certificate chain.",
+      "process_redundancy": "Repeated symlink setup script twice after misplacing path.",
+      "selective_reasoning_failure_rate": "Git post-receive hook failed three times before adjusting ownership."
+    }
+  },
+  "configure-git-webserver_trial4_mock": {
+    "task_id": "configure-git-webserver",
+    "trial_id": "configure-git-webserver_trial4_mock",
+    "tc": 1,
+    "constraint_adherence": 0.96,
+    "process_redundancy": 0.14,
+    "selective_reasoning_failure_rate": 0.12,
+    "reason": {
+      "constraint_adherence": "Followed the offline instructions and used canned repos.",
+      "process_redundancy": "Minimal extra runs while validating hook triggers.",
+      "selective_reasoning_failure_rate": "Only one failure before handshake fix."
+    }
+  },
+  "configure-git-webserver_trial5_mock": {
+    "task_id": "configure-git-webserver",
+    "trial_id": "configure-git-webserver_trial5_mock",
+    "tc": 0,
+    "constraint_adherence": 0.94,
+    "process_redundancy": 0.17,
+    "selective_reasoning_failure_rate": 0.15,
+    "reason": {
+      "constraint_adherence": "Attempted to fetch favicon from the web during setup.",
+      "process_redundancy": "Re-launched the same build script twice with unchanged env.",
+      "selective_reasoning_failure_rate": "Webhook test failed three times before adjusting path to repo."
+    }
+  },
+  "average": {
+    "task_id": "configure-git-webserver",
+    "trial_id": "average",
+    "tc": 0.2,
+    "constraint_adherence": 0.9400000000000001,
+    "process_redundancy": 0.166,
+    "selective_reasoning_failure_rate": 0.14800000000000002,
+    "reason": {
+      "constraint_adherence": "Mean of per-trial CA values across five runs.",
+      "process_redundancy": "Mean of per-trial PR values across five runs.",
+      "selective_reasoning_failure_rate": "Mean of per-trial SRS values across five runs."
+    }
+  }
+}

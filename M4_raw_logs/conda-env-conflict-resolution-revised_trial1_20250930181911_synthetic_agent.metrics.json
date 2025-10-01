@@ -1,0 +1,7 @@
+{
+  "constraint_adherence": 0.938,
+  "process_redundancy": 0.107,
+  "selective_reasoning_failure_rate": 0.0,
+  "command_count": 28,
+  "constraint_violations": 7
+}

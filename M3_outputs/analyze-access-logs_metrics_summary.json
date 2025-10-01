@@ -1,0 +1,80 @@
+{
+  "analyze-access-logs_trial1_mock": {
+    "task_id": "analyze-access-logs",
+    "trial_id": "analyze-access-logs_trial1_mock",
+    "tc": 0,
+    "constraint_adherence": 0.93,
+    "process_redundancy": 0.16,
+    "selective_reasoning_failure_rate": 0.14,
+    "reason": {
+      "constraint_adherence": "Attempted to install `jq` via apt for fancy parsing.",
+      "process_redundancy": "Ran overlapping grep filters repeatedly over the same hour of logs.",
+      "selective_reasoning_failure_rate": "Regex syntax error was executed three times before escaping the colon."
+    }
+  },
+  "analyze-access-logs_trial2_mock": {
+    "task_id": "analyze-access-logs",
+    "trial_id": "analyze-access-logs_trial2_mock",
+    "tc": 1,
+    "constraint_adherence": 0.97,
+    "process_redundancy": 0.1,
+    "selective_reasoning_failure_rate": 0.08,
+    "reason": {
+      "constraint_adherence": "Worked entirely with provided log archives and Python scripts.",
+      "process_redundancy": "Only one redundant summarisation command while validating output.",
+      "selective_reasoning_failure_rate": "Initial parse failure was fixed immediately."
+    }
+  },
+  "analyze-access-logs_trial3_mock": {
+    "task_id": "analyze-access-logs",
+    "trial_id": "analyze-access-logs_trial3_mock",
+    "tc": 0,
+    "constraint_adherence": 0.95,
+    "process_redundancy": 0.15,
+    "selective_reasoning_failure_rate": 0.12,
+    "reason": {
+      "constraint_adherence": "Triggered a network lookup for GeoIP enrichment.",
+      "process_redundancy": "Repeated the same pivot analysis twice before changing the key.",
+      "selective_reasoning_failure_rate": "Log parser crashed three times before field order was corrected."
+    }
+  },
+  "analyze-access-logs_trial4_mock": {
+    "task_id": "analyze-access-logs",
+    "trial_id": "analyze-access-logs_trial4_mock",
+    "tc": 0,
+    "constraint_adherence": 0.94,
+    "process_redundancy": 0.14,
+    "selective_reasoning_failure_rate": 0.11,
+    "reason": {
+      "constraint_adherence": "Wrote intermediate results to /tmp despite instruction to stay in workspace.",
+      "process_redundancy": "Double-counted requests by rerunning the same awk script.",
+      "selective_reasoning_failure_rate": "Filter expression failed three times before escaping wildcard."
+    }
+  },
+  "analyze-access-logs_trial5_mock": {
+    "task_id": "analyze-access-logs",
+    "trial_id": "analyze-access-logs_trial5_mock",
+    "tc": 0,
+    "constraint_adherence": 0.96,
+    "process_redundancy": 0.12,
+    "selective_reasoning_failure_rate": 0.1,
+    "reason": {
+      "constraint_adherence": "Observes offline policy and leverages cached GeoIP data.",
+      "process_redundancy": "Minimal reruns after finalising the summary pipeline.",
+      "selective_reasoning_failure_rate": "Single failure before the corrected log format was applied."
+    }
+  },
+  "average": {
+    "task_id": "analyze-access-logs",
+    "trial_id": "average",
+    "tc": 0.2,
+    "constraint_adherence": 0.95,
+    "process_redundancy": 0.134,
+    "selective_reasoning_failure_rate": 0.11000000000000001,
+    "reason": {
+      "constraint_adherence": "Mean of per-trial CA values across five runs.",
+      "process_redundancy": "Mean of per-trial PR values across five runs.",
+      "selective_reasoning_failure_rate": "Mean of per-trial SRS values across five runs."
+    }
+  }
+}

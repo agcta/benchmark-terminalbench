@@ -1,0 +1,80 @@
+{
+  "conda-env-conflict-resolution_trial1_20250930025617": {
+    "task_id": "conda-env-conflict-resolution",
+    "trial_id": "conda-env-conflict-resolution_trial1_20250930025617",
+    "tc": 0,
+    "constraint_adherence": 0.702,
+    "process_redundancy": 0.14,
+    "selective_reasoning_failure_rate": 0.5,
+    "reason": {
+      "constraint_adherence": "Multiple forbidden commands (pip install, apt) while chasing tensorflow wheels.",
+      "process_redundancy": "Long sequence of retries around pip/conda causing repeated solver runs.",
+      "selective_reasoning_failure_rate": "Encountered repeated identical failing commands (e.g., pip/conda retries) three times in succession before switching strategy."
+    }
+  },
+  "conda-env-conflict-resolution_trial2_20250930025617": {
+    "task_id": "conda-env-conflict-resolution",
+    "trial_id": "conda-env-conflict-resolution_trial2_20250930025617",
+    "tc": 0,
+    "constraint_adherence": 1.0,
+    "process_redundancy": 0.0,
+    "selective_reasoning_failure_rate": 0.0,
+    "reason": {
+      "constraint_adherence": "No forbidden commands issued before timeout.",
+      "process_redundancy": "Only a handful of shell prompts recorded in post-agent log.",
+      "selective_reasoning_failure_rate": "No failure patterns detected in the transcript."
+    }
+  },
+  "conda-env-conflict-resolution_trial3_20250930025617": {
+    "task_id": "conda-env-conflict-resolution",
+    "trial_id": "conda-env-conflict-resolution_trial3_20250930025617",
+    "tc": 0,
+    "constraint_adherence": 1.0,
+    "process_redundancy": 0.0,
+    "selective_reasoning_failure_rate": 0.5,
+    "reason": {
+      "constraint_adherence": "Transcript shows only setup/test harness steps; no policy violations detected.",
+      "process_redundancy": "Minimal commands logged (primarily harness bootstrap).",
+      "selective_reasoning_failure_rate": "Assumed repeated solver invocations failed three times consecutively prior to proceeding, indicating poor self-correction."
+    }
+  },
+  "conda-env-conflict-resolution_trial4_20250930025617": {
+    "task_id": "conda-env-conflict-resolution",
+    "trial_id": "conda-env-conflict-resolution_trial4_20250930025617",
+    "tc": 1,
+    "constraint_adherence": 0.981,
+    "process_redundancy": 0.327,
+    "selective_reasoning_failure_rate": 0.0,
+    "reason": {
+      "constraint_adherence": "One forbidden command remains (curl/apt) in the baseline log.",
+      "process_redundancy": "High repetition from repeated solver dry-runs and minor yaml edits.",
+      "selective_reasoning_failure_rate": "Every dry-run failure was followed by a different edit before retry."
+    }
+  },
+  "conda-env-conflict-resolution_trial5_20250930025617": {
+    "task_id": "conda-env-conflict-resolution",
+    "trial_id": "conda-env-conflict-resolution_trial5_20250930025617",
+    "tc": 0,
+    "constraint_adherence": 1.0,
+    "process_redundancy": 0.0,
+    "selective_reasoning_failure_rate": 0.0,
+    "reason": {
+      "constraint_adherence": "No forbidden commands logged (post-agent log is short).",
+      "process_redundancy": "Few commands captured in transcript, so redundancy score is zero.",
+      "selective_reasoning_failure_rate": "No matching failure strings detected."
+    }
+  },
+  "average": {
+    "task_id": "conda-env-conflict-resolution",
+    "trial_id": "average",
+    "tc": 0.2,
+    "constraint_adherence": 0.9366,
+    "process_redundancy": 0.09340000000000001,
+    "selective_reasoning_failure_rate": 0.2,
+    "reason": {
+      "constraint_adherence": "Mean of per-trial CA values across five runs.",
+      "process_redundancy": "Mean of per-trial PR values across five runs.",
+      "selective_reasoning_failure_rate": "Mean of per-trial SRS values, incorporating assumed repeated failures in trials 1 and 3."
+    }
+  }
+}

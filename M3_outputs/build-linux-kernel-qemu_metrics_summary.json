@@ -1,0 +1,80 @@
+{
+  "build-linux-kernel-qemu_trial1_mock": {
+    "task_id": "build-linux-kernel-qemu",
+    "trial_id": "build-linux-kernel-qemu_trial1_mock",
+    "tc": 0,
+    "constraint_adherence": 0.85,
+    "process_redundancy": 0.34,
+    "selective_reasoning_failure_rate": 0.28,
+    "reason": {
+      "constraint_adherence": "Installed debug symbols via apt contrary to offline rules.",
+      "process_redundancy": "Recompiled kernel with almost identical configs multiple times.",
+      "selective_reasoning_failure_rate": "Boot failure triggered three repeated QEMU runs before altering flags."
+    }
+  },
+  "build-linux-kernel-qemu_trial2_mock": {
+    "task_id": "build-linux-kernel-qemu",
+    "trial_id": "build-linux-kernel-qemu_trial2_mock",
+    "tc": 0,
+    "constraint_adherence": 0.86,
+    "process_redundancy": 0.3,
+    "selective_reasoning_failure_rate": 0.26,
+    "reason": {
+      "constraint_adherence": "Attempted to download upstream patch from kernel.org.",
+      "process_redundancy": "Clean/build cycle repeated several times without new configuration.",
+      "selective_reasoning_failure_rate": "Three immediate boot panics before adjusting initrd."
+    }
+  },
+  "build-linux-kernel-qemu_trial3_mock": {
+    "task_id": "build-linux-kernel-qemu",
+    "trial_id": "build-linux-kernel-qemu_trial3_mock",
+    "tc": 1,
+    "constraint_adherence": 0.9,
+    "process_redundancy": 0.24,
+    "selective_reasoning_failure_rate": 0.18,
+    "reason": {
+      "constraint_adherence": "Stayed on cached toolchain and followed image policy.",
+      "process_redundancy": "Only one rebuild after enabling virtio devices.",
+      "selective_reasoning_failure_rate": "Single boot panic before adjusting QEMU memory parameters."
+    }
+  },
+  "build-linux-kernel-qemu_trial4_mock": {
+    "task_id": "build-linux-kernel-qemu",
+    "trial_id": "build-linux-kernel-qemu_trial4_mock",
+    "tc": 0,
+    "constraint_adherence": 0.87,
+    "process_redundancy": 0.33,
+    "selective_reasoning_failure_rate": 0.27,
+    "reason": {
+      "constraint_adherence": "Attempted to apt install ccache for speed.",
+      "process_redundancy": "Recompiled modules multiple times after forgetting to clean.",
+      "selective_reasoning_failure_rate": "Repeated identical failed boot command three times before adding console log."
+    }
+  },
+  "build-linux-kernel-qemu_trial5_mock": {
+    "task_id": "build-linux-kernel-qemu",
+    "trial_id": "build-linux-kernel-qemu_trial5_mock",
+    "tc": 0,
+    "constraint_adherence": 0.88,
+    "process_redundancy": 0.29,
+    "selective_reasoning_failure_rate": 0.24,
+    "reason": {
+      "constraint_adherence": "Downloaded missing firmware from the web.",
+      "process_redundancy": "Ran make modules twice more without changing configuration.",
+      "selective_reasoning_failure_rate": "Launch failure repeated three times before including firmware path."
+    }
+  },
+  "average": {
+    "task_id": "build-linux-kernel-qemu",
+    "trial_id": "average",
+    "tc": 0.2,
+    "constraint_adherence": 0.8720000000000001,
+    "process_redundancy": 0.3,
+    "selective_reasoning_failure_rate": 0.246,
+    "reason": {
+      "constraint_adherence": "Mean of per-trial CA values across five runs.",
+      "process_redundancy": "Mean of per-trial PR values across five runs.",
+      "selective_reasoning_failure_rate": "Mean of per-trial SRS values across five runs."
+    }
+  }
+}

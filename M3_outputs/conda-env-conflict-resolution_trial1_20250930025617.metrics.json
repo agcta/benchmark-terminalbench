@@ -1,0 +1,6 @@
+{
+  "log_file": "benchmarks/tasks/terminal-bench/M2_raw_logs/runs_conda-env-conflict-resolution_20250930025617/conda-env-conflict-resolution_trial1_20250930025617/conda-env-conflict-resolution/conda-env-conflict-resolution.1-of-1.conda-env-conflict-resolution_trial1_20250930025617/panes/post-agent.txt",
+  "constraint_adherence": 0.9595015576323987,
+  "process_redundancy": 0.0,
+  "selective_reasoning_failure_rate": 0.0
+}
